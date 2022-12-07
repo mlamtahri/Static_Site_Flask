@@ -1,0 +1,11 @@
+channels:
+- conda-forge
+dependencies:
+- python=3.8.10
+- pip<=21.0.1
+- gunicorn
+- pip:
+  - flask-swagger-ui
+  - flask
+  
+name: conda_flask_env

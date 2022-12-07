@@ -1,0 +1,70 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a Test Api for iris model.",
+        "version": "1.0.0",
+        "title": "Swagger IRIS",
+        "termsOfService": ""
+         
+    },
+    "paths": {
+
+        "/result/{sepal_length}/{sepal_width}/{petal_length}/{petal_width}": {
+            "get": {
+                "tags": [
+                    "result"
+                ],
+                "summary": "Predict IRIS",
+               
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "sepal_length",
+                        "in": "path",
+                        "description": "sepal_length values",
+                        "required": true
+
+                    },   {
+                        "name": "sepal_width",
+                        "in": "path",
+                        "description": "sepal_width values",
+                        "required": true
+
+                    }
+                    ,   {
+                        "name": "petal_length",
+                        "in": "path",
+                        "description": "petal_length values",
+                        "required": true
+
+                    }
+                    ,   {
+                        "name": "petal_width",
+                        "in": "path",
+                        "description": "petal_width values",
+                        "required": true
+
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string"
+                            
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        }
+    }
+   
+
+   
+}
