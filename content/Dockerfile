@@ -2,7 +2,7 @@ FROM continuumio/miniconda3:latest
 
 WORKDIR /Static_Site_Flask/content
 
-COPY /Static_Site_Flask/content/conda_flask_env.yaml ./
+COPY conda_flask_env.yaml ./
 COPY flask-test.py ./
 COPY swagger.json ./
 COPY boot.sh ./
